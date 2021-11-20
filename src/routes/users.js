@@ -29,8 +29,6 @@ router.delete('/:id', (req, res) => {
 router.patch('/:id', (req, res) => {
     const { id } = req.params;
     const { firstName, lastName, age} = req.body;
-    // const firstName = req.body.firstName;
-    // const lastName = req.body.lastName
 
     const user = users.find((user) => user.id === id);
 
